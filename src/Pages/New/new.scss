@@ -1,0 +1,58 @@
+.new{
+    ::-webkit-file-upload-button{
+        background: red;
+        color: white;
+        height: 130%;
+        &:hover{
+            background: black;
+            color: black;
+        }
+    }
+    display: flex;
+    .new-container{
+        flex: 6;
+
+        .top, .bottom{
+            padding: 20px;
+            -webkit-box-shadow: 3px 4px 4px 1px rgba(189, 187, 189, 0.58);
+            -moz-box-shadow: 3px 4px 4px 1px rgba(189, 187, 189, 0.58);
+            box-shadow: 3px 4px 4px 1px rgba(189, 187, 189, 0.58);
+            margin: 20px;
+            display: flex;
+            h1{
+                color: gray;
+                font-size: 1.2rem;
+            }
+            .left{
+                flex: 1;
+                text-align: center;
+                img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    
+                }
+            }
+            .right{
+                flex: 2;
+                .form-right{
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .btn-red{
+                        background: red;
+                        color: white;
+                        transition: all 0.2s ease-in-out;
+                        &:hover{
+                            filter: brightness(0.7);
+                        
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
